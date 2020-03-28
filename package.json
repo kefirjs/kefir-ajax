@@ -2,8 +2,8 @@
   "name": "kefir-ajax",
   "version": "1.0.0",
   "description": "Low-level ajax library for Kefir",
-  "main": "dist/index.js",
-  "types": "kefir-ajax.d.ts",
+  "main": "dist/kefir-ajax.js",
+  "types": "dist/kefir-ajax.d.ts",
   "scripts": {
     "build": "tsc && babel src -d dist",
     "prepublishOnly": "npm run build && npm test",

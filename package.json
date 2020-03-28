@@ -15,8 +15,7 @@
   },
   "files": [
     "dist",
-    "src",
-    "kefir-ajax.d.ts"
+    "src"
   ],
   "repository": {
     "type": "git",

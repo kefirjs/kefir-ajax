@@ -1,0 +1,56 @@
+{
+  "name": "kefir-ajax",
+  "version": "1.0.0",
+  "description": "Low-level ajax library for Kefir",
+  "main": "dist/index.js",
+  "types": "kefir-ajax.d.ts",
+  "scripts": {
+    "build": "tsc && babel src -d dist",
+    "prepublishOnly": "npm run build && npm test",
+    "fmt": "prettier src/*.js test/*.js kefir-ajax.d.ts --write",
+    "test": "npm run test:fmt && npm run test:types && npm run test:unit",
+    "test:fmt": "prettier src/*.js test/*.js kefir-ajax.d.ts --check",
+    "test:types": "tsc",
+    "test:unit": "jest"
+  },
+  "files": [
+    "dist",
+    "src",
+    "kefir-ajax.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kefirjs/kefir-ajax.git"
+  },
+  "keywords": [
+    "kefir",
+    "ajax"
+  ],
+  "author": "James DiGioia <jamesorodig@gmail.com> (http://jamesdigioia.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kefirjs/kefir-ajax/issues"
+  },
+  "homepage": "https://github.com/kefirjs/kefir-ajax#readme",
+  "dependencies": {
+    "@types/kefir": "^3.8.0",
+    "@types/node": "^13.9.4"
+  },
+  "peerDependencies": {
+    "kefir": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.0",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@types/nise": "^1.4.0",
+    "babel-jest": "^25.2.3",
+    "jest": "^25.2.3",
+    "jest-kefir": "^2.2.0",
+    "kefir": "^3.8.0",
+    "nise": "^4.0.3",
+    "prettier": "^1.15.2",
+    "tsd": "^0.11.0",
+    "typescript": "^3.8.3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "strict": true,
+    "emitDeclarationOnly": true,
+    "lib": ["DOM"],
+    "target": "ES5",
+    "outFile": "dist/kefir-ajax.d.ts"
+  },
+  "include": ["src/kefir-ajax.js"]
+}

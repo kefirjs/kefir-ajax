@@ -112,6 +112,7 @@ export class NetworkError {
  *
  * @param {string} url
  * @param {AjaxOptions} [options]
+ * @returns {import("kefir").Observable<ObsResponse, NetworkError>}
  */
 export const ajax$ = (url, {method = 'GET', headers = {}, credentials = 'same-origin', body = ''} = {}) =>
   Kefir.stream(emitter => {

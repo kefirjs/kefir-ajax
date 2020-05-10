@@ -1,6 +1,6 @@
 {
   "name": "kefir-ajax",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Low-level ajax library for Kefir",
   "main": "dist/kefir-ajax.js",
   "types": "dist/kefir-ajax.d.ts",
